@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program6
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Введите число: ");
+            if (int.TryParse(Console.ReadLine(), out int n))
+            {
+                if (n % 10 == 0)
+                    Console.WriteLine("Оканчивается на 0");
+                else
+                    Console.WriteLine("Не оканчивается на 0");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода.");
+            }
+        }
+    }
+}
